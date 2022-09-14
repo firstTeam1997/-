@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email驗證</title>
+
+
+
+    <!-- 引用fontawe_some -->
+    <script src="https://kit.fontawesome.com/629732af24.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css(scss)/nav.css">
+    <link rel="stylesheet" href="./css(scss)/moreSearch.css">
+    <link rel="stylesheet" href="./css(scss)/post_activity.css">
+    <link rel="stylesheet" href="./年糕CSS/sing_inn.css">
+    <link rel="stylesheet" href="./年糕CSS/合併.css">
+    <link rel="stylesheet" href="./年糕RWD/合併RWD.css" media="screen and (max-width: 500px)">
+
+    
+<!-- 茜的CSS -->
+
+<link rel="stylesheet" href="./css(scss)/nav.css">
+<link rel="stylesheet" href="./css(scss)/moreSearch.css">
+<link rel="stylesheet" href="./css(scss)/post_activity.css">
+<link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/index_rwd.css">
+<link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/(index)activity_display_rwd.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="sign_in web_display" id="sign_in">
+        登 入
+    </div>
+
+    <!-- 漢堡選單-rwd -->
+    <div class="menu_out">
+        <div class="menu web_display" id="nav_menu">
+            <i class="fa-solid fa-bars menu_i"></i>                    
+            <div class="nav_dropdown">
+                <div>註冊</div>
+                <div>我要發文</div>
+                <div>我的最愛</div>
+                <div>會員中心</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 靠右列表 -->
+    <div class="nav_content_right  ">
+
+        <!-- 首頁 -->
+        <div class="sign_up rwd_display" id="nav_index">
+            <i class="fa-solid fa-house"></i>
+            首 頁
+        </div>
+
+         <!-- 文章區 -->
+        <div class="sign_up rwd_display" id="nav_post">
+            文章區
+        </div>
+
+
+         <!-- 文章區 -->
+         <div class="sign_up rwd_display" id="nav_like_post">
+            我的最愛
+        </div>
+
+        <!-- 註冊 -->
+        <div class="sign_up rwd_display" id="sign_up">
+            註 冊
+        </div>
+        
+         <!-- 登入 -->
+        <div class="sign_in rwd_display" id="sign_in">
+            登 入
+        </div>
+
+
+    </div>
+</div>
+<!-- 登入窗 -->
+<div class="log_in_alert" id="log_in_alert" style="display: none;">
+    <div class="triangle"></div>
+    <div class="log_in_out">
+
+        <!-- 登入標題 -->
+        <div class="log_in_title">
+            <h1>Log In</h1>
+        </div>
+        <!-- 輸入帳號 -->
+        <div class="input_box">
+
+            <i class="fa-solid fa-user-large"></i>
+            <input type="text" placeholder="帳號">
+        </div>
+
+        <!-- 輸入密碼 -->
+        <div class="input_box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="密碼">
+        </div>
+
+        <!-- 密碼驗證 /忘記密碼 -->
+        <div class="log_in_msg">
+            <div class="x_out">
+                <img src="./img/remove.png" alt="">
+                <p>請重新輸入</p>
+            </div>
+            <p>忘記密碼</p>
+        </div>
+
+        <!-- 登入按鈕 -->
+        <div class="log_in_btn">登入</div>
+
+        <!-- 或加入我們（文字） -->
+        <div class="or_add_us">
+            <div class="or_add_us_line"></div>
+            <p>或加入我們</p>
+            <div class="or_add_us_line"></div>
+
+        </div>
+
+        <!-- 註冊按鈕 -->
+        <div class="sign_up_btn">註冊</div>
+
+    </div>
+
+</div>
+</div>
+
+<!-- 頭區 -->
+
+<div class="header">
+<div class="header_mask">
+    123
+    <div class="header_content header_content_post_top container ">
+        <!-- 點選此區塊跳轉到文章區 -->
+        
+            <div class="sligen_box">
+                
+                <h1 class="web_name ">發出你想揪的團</h1>
+                <h1 class="web_slogen web_slogen_rwd">開始尋找你的夥伴</h1>
+            </div>
+    
+    </div>
+
+
+</div>
+</div>
+
+    <div class="progress_out container">
+        <ul class="progress">
+            <li class="active">請輸入Email</li>
+            <li>Email認證</li>
+            <li>資料填寫</li>
+            <li>資料確認</li>
+            <li>註冊成功</li>
+        </ul>
+    </div>
+
+
+
+
+    <div class="box1">
+
+        <div class="box2" style="left: 0px;">
+
+            <!-- 第一頁輸入註冊資料區 -->
+            <div class="box3">
+                <div class="grid-container1">
+
+                    <div class="grid-container1_cell_1">
+                        <div>
+                            <h2>請 輸 入 E m a i l , 收 取 驗 證 碼 </h2>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container1_cell_2">
+                        <div >
+                            <p>* 註 冊 E m a i l 即 為 你 的 帳 號</p>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container1_cell_3">
+                            <input class="grid-container1_input_text" type="text" placeholder="例：cccchain0226@gmail.com">
+                    </div>
+            
+                    <div class="grid-container1_cell_4">           
+                       <input id="sign_up_2" type="button" class="grid-container1_button_sendmail" value="寄 出 驗 證 碼" >           
+                    </div>
+            
+                </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+
+            <!-- 第二頁輸入註冊資料區 -->
+            <div class="box4">
+                <div class="grid-container2">
+
+                    <div class="grid-container2_cell_1">
+                        <div>
+                            <h2>請 輸 入 您 收 到 的 驗 證 碼 </h2>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container2_cell_3">
+                            <input class="grid-container2_input_text" type="text" placeholder="例：cccchain0226@gmail.com">
+                    </div>
+            
+                    <div class="grid-container2_cell_4">           
+                       <input  type="button" class="grid-container2_button_sendmail" value="開 始 註 冊" >  
+                        
+                    </div>
+            
+                    <div class="grid-container2_cell_5">  
+                        
+                            <button type="button" class="grid-container2_cell_5_button">重新輸入Email</button>
+                            <label class="grid-container2_cell_5_lable" for="">|</label>
+                            <button type="button" class="grid-container2_cell_5_button">重新寄出</button>            
+                         
+                    </div>
+
+                    <!-- <div class="grid-container2_cell_6">  
+                        <div>    
+                            <button type="button">重新輸入Email</button>
+                            <label class="grid-container2_cell_5_lable" for="">|</label>
+                            <button type="button">重新寄出</button>            
+                        </div>  
+                    </div> -->
+
+                    
+
+                  
+
+                    
+                   
+            
+                </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+
+            <!-- 第三頁輸入註冊資料區 -->
+            <div class="box5">
+                <div class="grid-container3">
+
+                    <div class="grid-container3_place1">
+                        <div>
+                            <label class="grid-container3_elabel" for="">帳號 (Email)</label>
+                            <div class="grid-container3_divpadding2">
+                                <input class="grid-container3_einput" type="text" placeholder="sdf156@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container3_place4">
+                        <div>
+                            <label class="grid-container3_elabel" for="">密碼</label>
+                            <div class="grid-container3_divpadding2">
+                                <input class="grid-container3_einput" type="password">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <!-- 上傳圖片的 -->
+            
+                    <div class="grid-container3_place7">
+                        <div>
+                            <div class="">
+                                <img src="img/handsome_man.png" style="width: 3rem">
+                                <label class="grid-container3_elabel">頭像上傳555</label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container3_place2">
+                        <div>
+                            <label class="grid-container3_elabel" for="">暱稱</label>
+                            <div class="grid-container3_divpadding2">
+                                <input class="grid-container3_einput" type="text" placeholder="王小明">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container3_place5">
+                        <div>
+                            <label class="grid-container3_elabel" for="">姓名</label>
+                            <div class="grid-container3_divpadding2">
+                                <input class="grid-container3_einput" type="text">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container3_place8">
+                        <div>
+                            <label class="grid-container3_elabel" for="">關於我</label>
+                            <br>
+                            <div>
+                                <textarea class="grid-container3_etextarea" name="" id="" ></textarea>
+                                <br>
+                                <label class="grid-container3_elabel" style="text-align:right" for="">字數限制 0/100</label>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="grid-container3_place3">
+                        <div>
+                            <label class="grid-container3_elabel" for="">出生(西元/月/日)</label>
+                            <div class="grid-container3_divpadding2">
+                                <input class="grid-container3_einput" type="date">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="grid-container3_place6">
+                        <div>
+                            <label class="grid-container3_elabel" for="">性別</label>        
+                            <div class="moreSearch_card_box post_content">
+                                <div class="form-check">
+                                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="male"
+                                        checked> 男性
+                                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="female"
+                                        checked>女性
+                                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault"
+                                        id="not_limited" checked>多元性別
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+            
+                    <div class="grid-container3_place9">
+                        <div>
+                            <input type="button" class="grid-container3_button1" value="註  冊">
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+
+                
+
+            <!-- 第四頁註冊 -->
+            <div class="box6">
+                <div class="grid-container4">
+
+                    <div class="grid-container4_place1">
+                        <div>
+                            <label class="grid-container4_elabel" for="">帳號 (Email)</label>
+                            <div class="grid-container4_divpadding2">
+                                <input class="grid-container4_einput" type="text" placeholder="sdf156@gmail.com">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container4_place4">
+                        <div>
+                            <label class="grid-container4_elabel" for="">密碼</label>
+                            <div class="grid-container4_divpadding2">
+                                <input class="grid-container4_einput" type="password">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <!-- 上傳圖片的 -->
+            
+            
+                    <div class="grid-container4_place7">
+                        <div>
+                            <div class="">
+                                <img src="img/handsome_man.png" style="width: 3rem">
+                                <label class="grid-container4_elabel">頭像上傳555</label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container4_place2">
+                        <div>
+                            <label class="grid-container4_elabel" for="">暱稱</label>
+                            <div class="grid-container4_divpadding2">
+                                <input class="grid-container4_einput" type="text" placeholder="王小明">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container4_place5">
+                        <div>
+                            <label class="grid-container4_elabel" for="">姓名</label>
+                            <div class="grid-container4_divpadding2">
+                                <input class="grid-container4_einput" type="text">
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="grid-container4_place8">
+                        <div>
+                            <label class="grid-container4_elabel" for="">關於我</label>
+                            <br>
+                            <div>
+                                <textarea class="grid-container4_etextarea" name="" id="" cols="100" rows="5"></textarea>
+                                <br>
+                                <label class="grid-container4_elabel" style="text-align:right" for="">字數限制 0/100</label>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="grid-container4_place3">
+                        <div>
+                            <label class="grid-container4_elabel" for="">出生(西元/月/日)</label>
+                            <div class="grid-container4_divpadding2">
+                                <input class="grid-container4_einput" type="date">
+                            </div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="grid-container4_place6">
+                        <div>
+                            <div>
+                                <label class="grid-container4_elabel" for="">性別</label>
+                                <br>
+                                <br>
+                                <div class="moreSearch_card_box post_content">
+                                    <div class="form-check">
+                                        <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="male"
+                                            checked> 男性
+                                        <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="female"
+                                            checked>女性
+                                        <input class="form-check-input input_radio" type="radio" name="flexRadioDefault"
+                                            id="not_limited" checked>多元性別
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+            
+            
+                    <div class="grid-container4_place9">
+                        <div>
+                            <input id="sign_up_5" type="button" class="grid-container4_button1" value="確  認">
+                        </div>
+                    </div>
+            
+                    <div class="grid-container4_place10">
+                        <div>
+                            <input type="button" class="grid-container4_button2" value="修  改">
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+            <!-- ------------------------------------------------------ -->
+
+
+            <!-- 第五頁註冊 -->
+            <div class="box7">
+                <div class="grid-container5">
+
+                    <div class="grid-container5_place1">
+                        <div>
+                            <img src="./img/good.png" alt="註冊成功" width="102" height="102">
+                        </div>
+                    </div>
+            
+                    <div class="grid-container5_place2">
+            
+                        <div class="grid-container5_place2_success_message">
+                            <label>註冊會員成功 !</label>
+                        </div>
+            
+                        <div class="grid-container5_place2_Jump_page">
+                            <label>5秒後將自動跳轉</label>
+                            <button type="button" class="grid-container5_Jump_page">首頁</button>
+                        </div>
+                    </div>
+            
+                </div>
+            
+            </div>
+            <!-- ------------------------------------------------------ -->
+
+        </div>
+    </div>
+
+            <script src="./測試/測試.js"> </script>
+
+            <div class="left">
+                左
+            </div>
+            <div class="right">
+                右
+            </div>
+
+            <script src="./合併測試.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- 帖子區(卡片)-->
+            <!-- main>p用indrxcard.scss做 -->
+            <!-- <div class="main" >
+        <div class="activity container">
+            
+            <div class="activity_card_out">
+               
+            </div>
+        </div>
+    </div> -->
+
+
+
+            <!-- ---------------------------------- -->
+            <!-- 盛弘打得js -->
+            <script src="./js/index.js"></script>
+
+</body>
+
+</html>

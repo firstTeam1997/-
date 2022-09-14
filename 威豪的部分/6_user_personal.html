@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員中心</title>
+
+
+
+    <!-- 引用fontawe_some -->
+    <script src="https://kit.fontawesome.com/629732af24.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css(scss)/nav.css">
+    <link rel="stylesheet" href="./css(scss)/post_activity.css">
+    <link rel="stylesheet" href="./年糕CSS/6_ member_center.css">
+    <link rel="stylesheet" href="./年糕CSS/sing_inn.css">
+    <link rel="stylesheet" href="./年糕RWD/6_ member_center_rwd.css" media="screen and (max-width: 500px)">
+    
+    <!-- rwd -->
+   <!-- 茜的CSS -->
+   <link rel="stylesheet" href="./css(scss)/@public_scss_mix.css">
+   <link rel="stylesheet" href="./css(scss)/(index)activity_display.css">
+   <link rel="stylesheet" href="./css(scss)/nav.css">
+   <link rel="stylesheet" href="./css(scss)/Log_in.css">
+   <link rel="stylesheet" href="./css(scss)/indexcard.css">
+   <link rel="stylesheet" href="./css(scss)/view_personal.css">
+   <link rel="stylesheet" href="./css(scss)/hover_user.css">
+   
+
+   <link rel="stylesheet" href="./css(scss)/nav.css">
+   <link rel="stylesheet" href="./css(scss)/Log_in.css">
+   <link rel="stylesheet" href="./css(scss)/moreSearch.css">
+   <link rel="stylesheet" href="./css(scss)/post_activity.css">
+   <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/index_rwd.css">
+   <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/(index)activity_display_rwd.css">
+   <link rel="stylesheet" href="./css(scss)/indexcard.css">
+       <!-- rwd -->
+   <link rel="stylesheet" href="./css(scss)/index.css">
+   <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/index_rwd.css">
+   <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/(index)activity_display_rwd.css">
+    <!-- 彈出畫面CSS＿報名者資訊 -->
+    <link rel="stylesheet" href="./css(scss)/add_activity_personal.css">
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- 導覽列 -->
+
+
+    <div class="sign_in web_display" id="sign_in">
+        登 入
+    </div>
+
+    <!-- 漢堡選單-rwd -->
+    <div class="menu_out">
+        <div class="menu web_display" id="nav_menu">
+            <i class="fa-solid fa-bars menu_i"></i>
+            <div class="nav_dropdown">
+                <div>註冊</div>
+                <div>我要發文</div>
+                <div>我的最愛</div>
+                <div>會員中心</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 靠右列表 -->
+    <div class="nav_content_right  ">
+
+        <!-- 首頁 -->
+        <div class="sign_up rwd_display" id="nav_index">
+            <i class="fa-solid fa-house"></i>
+            首 頁
+        </div>
+
+        <!-- 文章區 -->
+        <div class="sign_up rwd_display" id="nav_post">
+            文章區
+        </div>
+
+
+        <!-- 文章區 -->
+        <div class="sign_up rwd_display" id="nav_like_post">
+            我的最愛
+        </div>
+
+        <!-- 註冊 -->
+        <div class="sign_up rwd_display" id="sign_up">
+            註 冊
+        </div>
+
+        <!-- 登入 -->
+        <div class="sign_in rwd_display" id="sign_in">
+            登 入
+        </div>
+
+
+    </div>
+    </div>
+    <!-- 登入窗 -->
+    <div class="log_in_alert" id="log_in_alert" style="display: none;">
+        <div class="triangle"></div>
+        <div class="log_in_out">
+
+            <!-- 登入標題 -->
+            <div class="log_in_title">
+                <h1>Log In</h1>
+            </div>
+            <!-- 輸入帳號 -->
+            <div class="input_box">
+
+                <i class="fa-solid fa-user-large"></i>
+                <input type="text" placeholder="帳號">
+            </div>
+
+            <!-- 輸入密碼 -->
+            <div class="input_box">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" placeholder="密碼">
+            </div>
+
+            <!-- 密碼驗證 /忘記密碼 -->
+            <div class="log_in_msg">
+                <div class="x_out">
+                    <img src="./img/remove.png" alt="">
+                    <p>請重新輸入</p>
+                </div>
+                <p>忘記密碼</p>
+            </div>
+
+            <!-- 登入按鈕 -->
+            <div class="log_in_btn">登入</div>
+
+            <!-- 或加入我們（文字） -->
+            <div class="or_add_us">
+                <div class="or_add_us_line"></div>
+                <p>或加入我們</p>
+                <div class="or_add_us_line"></div>
+
+            </div>
+
+            <!-- 註冊按鈕 -->
+            <div class="sign_up_btn">註冊</div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <!-- 頭區 -->
+
+    <div class="header">
+        <div class="header_mask">
+            123
+            <div class="header_content header_content_post_top container ">
+                <!-- 點選此區塊跳轉到文章區 -->
+
+                <div class="sligen_box">
+
+                    <h1 class="web_name ">發出你想揪的團</h1>
+                    <h1 class="web_slogen web_slogen_rwd">開始尋找你的夥伴</h1>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- 簡略會員中心 -->
+
+    <div class=" grid-container">
+
+        <div class="place1">
+            <img src="./img/good.png" alt="大頭貼" width="80" height="80">
+        </div>
+
+        <div class="place2">
+            <label>喵喵 | 25</label>
+        </div>
+
+        <div class="place3">
+            <img src="./img/gmail.png" alt="" width="26" height="26">
+
+        </div>
+
+        <div class="place4">
+            <label>cchain55555@gmail.com</label>
+        </div>
+
+        <div class="place5">
+            <label for="">關於我</label>
+        </div>
+
+        <div class="place6">
+            <label>自我介紹即對一群人說明有關自己的事，尤其是在對方不認識自己的情況下。</label>
+        </div>
+
+        <div class="place7">
+            <input class="button_edit" type="button" value="編 輯">
+        </div>
+
+    </div>
+
+    <!-- 會員中心詳情 -->
+
+    <div class=" grid-container2">
+
+        <div class="place_1">
+            <div>
+                <label class="box2_lable">姓名</label>
+            </div>
+            <br>
+            <div>
+                <label class="personal_information">陳娟娟</label>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <div class="place_2">
+            <div>
+                <label class="box2_lable">生日</label>
+            </div>
+            <br>
+            <div>
+                <label class="personal_information">1997/05/06</label>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <div class="place_3">
+            <div>
+                <label class="box2_lable">帳號</label>
+            </div>
+            <br>
+            <div>
+                <label class="personal_information">cch55555@gmail.com</label>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <div class="place_4">
+            <div>
+                <label class="box2_lable">密碼</label>
+            </div>
+            <br>
+            <div>
+                <label class="personal_information">*******</label>
+            </div>
+            <br>
+            <hr>
+        </div>
+
+        <div class="place_5">
+            <label class="box2_lable box2_lable_activity_record">我發起過的團</label>
+        </div>
+
+        <div class="place_6">
+            <label class="box2_lable3 box2_lable_activity_record">我報名的團</label>
+        </div>
+
+        <div class="place_7">
+            <label class="box2_lable2 box2_lable_activity_record">我的最愛</label>
+        </div>
+
+        <!-- 卡片區 -->
+
+    </div>
+    </div>
+
+    <div class="grid-container3">
+        <div class="activity_card_box cardleft" id="activity_detail_display_1">
+            <div class="activity_card">
+                <div class="activity_card_img">
+                    <!-- 點選觀看個人介紹 -->
+                    <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+                </div>
+                <!-- 卡片１ -->
+                <div class="activity_card_content">
+                    <div class="col">
+                        <div class="row-1">
+                            <p id="name">陳小明</p>
+                            <div class="row-1_right">
+                                <a href="" class="activity_card_deadline">已截止</a>
+                                <div class="mycard-icon " id="like">
+                                    <i class="fa-solid fa-heart"></i>
+                                    <p>+99</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <h3 class="mycard-title">求游泳教學</h3>
+
+                        <div class="row-2">
+                            <div class="mycard-icon" id="address">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>台南市</p> &emsp;
+                                <p>水多多游泳池</p>
+                            </div>
+
+                            <div class="mycard-icon" id="date">
+                                <i class="fa-regular fa-clock"></i>
+                                <p>111/08/12-111/08/15</p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="row-3">
+                            <div class="keyword-box">
+                                <a href="" class="keyword">游泳</a>
+                                <a href="" class="keyword">求教學</a>
+                                <a href="" class="keyword_male">限女性</a>
+
+                            </div>
+
+                            <div class="msg-num-box">
+                                <div class="mycard-icon rwd_display" id="msg">
+                                    <i class="fa-solid fa-comment-dots"></i>
+                                    <p>+100</p>
+                                </div>
+                                <div class="mycard-icon num-people rwd_display">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p>5/10</p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+    </div>
+    <!-- 卡片２ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片３ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片４ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片５ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片６ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 卡片７ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 卡片８ -->
+    <div class="activity_card_box cardleft" id="activity_detail_display_1">
+
+        <div class="activity_card">
+            <div class="activity_card_img">
+                <!-- 點選觀看個人介紹 -->
+                <img src="./img/vjd_nd.png" id="view_user_img" alt="">
+            </div>
+            <div class="activity_card_content">
+                <div class="col">
+                    <div class="row-1">
+                        <p id="name">陳小明</p>
+                        <div class="row-1_right">
+                            <a href="" class="activity_card_deadline">已截止</a>
+                            <div class="mycard-icon " id="like">
+                                <i class="fa-solid fa-heart"></i>
+                                <p>+99</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <h3 class="mycard-title">求游泳教學</h3>
+
+                    <div class="row-2">
+                        <div class="mycard-icon" id="address">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>台南市</p> &emsp;
+                            <p>水多多游泳池</p>
+                        </div>
+
+                        <div class="mycard-icon" id="date">
+                            <i class="fa-regular fa-clock"></i>
+                            <p>111/08/12-111/08/15</p>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row-3">
+                        <div class="keyword-box">
+                            <a href="" class="keyword">游泳</a>
+                            <a href="" class="keyword">求教學</a>
+                            <a href="" class="keyword_male">限女性</a>
+
+                        </div>
+
+                        <div class="msg-num-box">
+                            <div class="mycard-icon rwd_display" id="msg">
+                                <i class="fa-solid fa-comment-dots"></i>
+                                <p>+100</p>
+                            </div>
+                            <div class="mycard-icon num-people rwd_display">
+                                <i class="fa-solid fa-user"></i>
+                                <p>5/10</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+
+
+    <!-- 帖子區(卡片)-->
+    <!-- main>p用indrxcard.scss做 -->
+    <!-- <div class="main" >
+        <div class="activity container">
+            
+            <div class="activity_card_out">
+               
+
+            </div>
+        </div>
+    </div> -->
+
+
+
+    <!-- ---------------------------------- -->
+    <!-- 盛弘打得js -->
+
+</body>
+
+</html>

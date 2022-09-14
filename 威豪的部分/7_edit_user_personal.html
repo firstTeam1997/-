@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改個人資料</title>
+
+
+    <!-- 日期選擇器 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+    <link rel='stylesheet prefetch'
+        href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/css/bootstrap-datepicker3.standalone.css'>
+
+    <link rel="stylesheet" href="css/date_post.css">
+
+
+    <!-- 引用fontawe_some -->
+    <script src="https://kit.fontawesome.com/629732af24.js" crossorigin="anonymous"></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css(scss)/nav.css">
+    <link rel="stylesheet" href="./css(scss)/moreSearch.css">
+    <link rel="stylesheet" href="./css(scss)/post_activity.css">
+    <link rel="stylesheet" href="./年糕CSS/7_data_update.css">
+    <link rel="stylesheet" href="./年糕CSS/sing_inn.css">
+    <link rel="stylesheet" href="./年糕RWD/7_data_update_RWD.css" media="screen and (max-width: 500px)">
+
+<!-- 茜的CSS -->
+    <link rel="stylesheet" href="./css(scss)/@public_scss_mix.css">
+    <link rel="stylesheet" href="./css(scss)/(index)activity_display.css">
+    <link rel="stylesheet" href="./css(scss)/nav.css">
+    <link rel="stylesheet" href="./css(scss)/moreSearch.css">
+    <link rel="stylesheet" href="./css(scss)/post_activity.css">
+    <link rel="stylesheet" href="./css(scss)/indexcard.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/index_rwd.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href="./css(scss)/(index)activity_display_rwd.css">
+ 
+
+    
+
+
+    <!--  引JQ 年齡範圍拉桿 -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+    
+
+
+</head>
+
+<body>
+
+    <div class="sign_in web_display" id="sign_in">
+        登 入
+    </div>
+
+    <!-- 漢堡選單-rwd -->
+    <div class="menu_out">
+        <div class="menu web_display" id="nav_menu">
+            <i class="fa-solid fa-bars menu_i"></i>                    
+            <div class="nav_dropdown">
+                <div>註冊</div>
+                <div>我要發文</div>
+                <div>我的最愛</div>
+                <div>會員中心</div>
+            </div>
+        </div>
+
+    </div>
+    <!-- 靠右列表 -->
+    <div class="nav_content_right  ">
+
+        <!-- 首頁 -->
+        <div class="sign_up rwd_display" id="nav_index">
+            <i class="fa-solid fa-house"></i>
+            首 頁
+        </div>
+
+         <!-- 文章區 -->
+        <div class="sign_up rwd_display" id="nav_post">
+            文章區
+        </div>
+
+
+         <!-- 文章區 -->
+         <div class="sign_up rwd_display" id="nav_like_post">
+            我的最愛
+        </div>
+
+        <!-- 註冊 -->
+        <div class="sign_up rwd_display" id="sign_up">
+            註 冊
+        </div>
+        
+         <!-- 登入 -->
+        <div class="sign_in rwd_display" id="sign_in">
+            登 入
+        </div>
+
+
+    </div>
+</div>
+<!-- 登入窗 -->
+<div class="log_in_alert" id="log_in_alert" style="display: none;">
+    <div class="triangle"></div>
+    <div class="log_in_out">
+
+        <!-- 登入標題 -->
+        <div class="log_in_title">
+            <h1>Log In</h1>
+        </div>
+        <!-- 輸入帳號 -->
+        <div class="input_box">
+
+            <i class="fa-solid fa-user-large"></i>
+            <input type="text" placeholder="帳號">
+        </div>
+
+        <!-- 輸入密碼 -->
+        <div class="input_box">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="密碼">
+        </div>
+
+        <!-- 密碼驗證 /忘記密碼 -->
+        <div class="log_in_msg">
+            <div class="x_out">
+                <img src="./img/remove.png" alt="">
+                <p>請重新輸入</p>
+            </div>
+            <p>忘記密碼</p>
+        </div>
+
+        <!-- 登入按鈕 -->
+        <div class="log_in_btn">登入</div>
+
+        <!-- 或加入我們（文字） -->
+        <div class="or_add_us">
+            <div class="or_add_us_line"></div>
+            <p>或加入我們</p>
+            <div class="or_add_us_line"></div>
+
+        </div>
+
+        <!-- 註冊按鈕 -->
+        <div class="sign_up_btn">註冊</div>
+
+    </div>
+
+</div>
+</div>
+
+<!-- 頭區 -->
+
+<div class="header">
+<div class="header_mask">
+    123
+    <div class="header_content header_content_post_top container ">
+        <!-- 點選此區塊跳轉到文章區 -->
+        
+            <div class="sligen_box">
+                
+                <h1 class="web_name ">發出你想揪的團</h1>
+                <h1 class="web_slogen web_slogen_rwd">開始尋找你的夥伴</h1>
+            </div>
+    
+    </div>
+
+
+</div>
+</div>
+
+
+
+    <!-- 會員資料修改 -->
+
+    <div class="box1">
+        <!-- 修改頭貼 -->
+        <div class="place1">
+            <img src="./img/good.png" alt="" width="130" height="130">
+        </div>
+        
+        <div class="place2">   
+            <label class="place2_label" for="">點選圖像更換大頭照</label>
+        </div>
+        <!-- 刪除帳號按鈕 -->
+        <div class="place3">
+            <button type="button" class="place3_buttom">刪除帳號</button>
+        </div>
+    </div>
+
+    <!-- 修改帳號密碼生日 -->
+
+    <div class="box2">
+
+        <div class="place_1">
+            <div class="label_look">
+                <label for="">姓名</label><br>
+            </div>
+            <div class="">
+                <input class="input_text_look" type="text" placeholder="陳娟娟">
+            </div>
+        </div>
+
+        <div class="place_2">
+            <div class="label_look">
+                <label for="">暱稱</label><br>
+            </div>
+            <div>
+                <input class="input_text_look" type="text" placeholder="娟娟">
+            </div>
+        </div>
+
+        <div class="place_3">
+            <div class="label_look">
+                <label for="">Email | 帳號</label><br>
+            </div>
+            <div>
+                <input class="input_text_look" type="text" placeholder="cchain0226@gmail.com">
+            </div>
+        </div>
+
+        <div class="place_4">
+            <div class="label_look">
+                <label for="">密碼</label><br>
+            </div>
+            <div>
+                <input class="input_text_look" type="password" placeholder="">
+            </div>
+        </div>
+
+        <div class="place_5">
+            
+            <div class="label_look1" > 
+                <label  for="">生日</label>
+            </div>
+            <div>
+                <input  class="input_text_look" type="date">
+            </div>
+        </div>
+
+        <div class="place_6">
+            
+            <div class="label_look1">
+                <label for="">性別 (選填)</label><br>
+            </div>
+
+            <div class="moreSearch_card_box post_content">
+                <div class="form-check">
+                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="male" checked> 男性  
+                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="female" checked>女性
+                    <input class="form-check-input input_radio" type="radio" name="flexRadioDefault" id="not_limited" checked>多元性別
+                </div>
+            </div>
+        </div>
+
+        <div class="place_7">
+            <div class="label_look">
+                <label for="">關於我 (選填)</label><br>
+            </div>
+            <div>
+                <textarea class="about_me" name="" id="" ></textarea>
+            </div>
+        </div>
+
+        <div class="place_8">
+            <div>
+                <div>
+                <input type="button" class="input_button" value="確  認">
+                </div>
+            </div>
+        </div>
+
+    </div>
+            
+           
+
+                        
+    </div>
+      
+
+
+
+    <!-- ---------------------------------- -->
+    <!-- 盛弘打得js -->
+    <script src="./js/index.js"></script>
+    <!-- 日期選擇器 -->
+    <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script> -->
+    <script
+        src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.0/js/bootstrap-datepicker.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-dateFormat/1.0/jquery.dateFormat.js'></script>
+
+    <script src="js/date.js"></script>
+
+        <!-- 左側滑出，進階搜尋  -->
+        <script src="js/moreSearc_btn.js"></script>
+        <!--範位拉桿-->
+        <script src="./js/slider-rang.js"></script>
+    
+</body>
+
+</html>
